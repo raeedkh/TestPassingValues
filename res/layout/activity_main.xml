@@ -9,8 +9,49 @@
     tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
+
+    <EditText
+        android:id="@+id/myname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/age"
+        android:layout_below="@+id/age"
+        android:layout_marginTop="29dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/myemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myname"
+        android:layout_below="@+id/myname"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/AgedDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myemail"
+        android:layout_below="@+id/myage"
+        android:layout_marginTop="44dp"
+        android:text="Show my age" />
+
+    <EditText
+        android:id="@+id/myage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myemail"
+        android:layout_below="@+id/myemail"
+        android:layout_marginTop="37dp"
+        android:ems="10" />
 
 </RelativeLayout>
